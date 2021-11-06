@@ -113,7 +113,7 @@ div:nth-child(7) {
     position: static;
     height: 30%;
     background-color: whitesmoke;
-    margin-top: 10%;
+    margin-top: 30%;
 }
 
 @media screen and (max-width: 800px) {
