@@ -1,0 +1,451 @@
+<!--
+    Author: Mariam Aoune 
+    Date of completion: th of Feb 2021 
+    Name of file: Blog_portfolio_Concordia.html
+    Description: Includes information about Digital Media 
+    and Computer science in a blog-stlye form. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+/* CSS file for the three web pages (Homepage, Form, Blog) */
+
+*{
+   
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   width: 100%;
+   height: 100vh;
+   } 
+
+#homepage{
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 80%;
+    border-radius: 40px; 
+    background-color: #b5b5ac;
+}
+
+.Art-Design{
+     
+    text-align: center;
+    font-size: 40px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+}
+
+#lower-center{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 5%;       
+     
+}
+
+a{
+    margin-left: 1.5em;
+    text-decoration: none;
+    color: #576b73 ;
+}
+
+.hover:hover{
+    color:whitesmoke;
+}
+
+div:nth-child(2) {
+   margin-bottom: 20%;
+}
+
+div:nth-child(3),
+div:nth-child(4),
+div:nth-child(5),
+div:nth-child(6),
+div:nth-child(7) {
+   margin-bottom: 10%;
+}
+
+.content {
+   position: relative;
+   display: block;
+   width: 80%;
+   height: 80%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 80%;
+   border-radius: 20px;
+   background-color: #b5b5ac;
+   top: 50%;
+}
+
+#header {
+   position: static;
+   display: block;
+   margin-bottom: 40px;
+   line-height: 1.5em;
+   min-width: 100%;
+   text-align: center;
+   font-size: 200%;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.topnav {
+   position: static;
+   height: 20%;
+   border: 10px solid whitesmoke;
+   margin: 20px 40px 0 40px;
+
+}
+
+.nav {
+   position: relative;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 15px;
+   float: right;
+   margin-top: 60px;
+   margin-left: 20px;
+   right: 50px;
+   padding-left: 30px;
+   text-decoration: 3px underline solid whitesmoke;
+}
+
+#footer {
+   position: static;
+   height: 30%;
+   background-color: whitesmoke;
+   margin-top: 20%;
+}
+
+@media screen and (max-width: 800px) {
+   .topnav a:not(:first-child) {
+       display: none;
+   }
+
+   .topnav a.icon {
+       float: right;
+       display: block;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   #header {
+       padding-bottom: 20%;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .content {
+       line-height: 1.5em;
+       height: 110%;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+   .content {
+       line-height: 1em;
+       height: 150%;
+   }
+
+   #header {
+       padding-bottom: 30%;
+   }
+}
+
+
+span {
+   position: absolute;
+   text-align: center;
+   padding: 1.5% 0 0 5%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 30px;
+}
+
+p {
+
+   text-align: left;
+   padding: 1% 0 0 4%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 19px;
+   line-height: 1.5em;
+   margin-bottom: 0.25em;
+
+}
+
+ul {
+   position: absolute;
+   text-align: left;
+   padding: 7% 2% 0 5%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 19px;
+
+}
+
+.image1 {
+
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+.figcaption {
+   padding-left: 35%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 11px;  
+    
+}
+
+#caption-image{
+   margin-top: -9%;
+   position: static;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   border: 5px solid whitesmoke;
+   border-spacing: 20px;
+   position: relative;
+   margin: 10%;
+
+}
+
+form {
+   margin: 0 auto;
+   width: 40%;
+
+}
+
+#Name {
+   padding: 0 0 80px 0;
+
+
+}
+
+#Email {
+   padding: 30px 0 0 0;
+}
+
+.feedback {
+   height: 100px;
+}
+
+input[type="text"],
+[type="email"],
+textarea {
+   font-family: sans-serif;
+   font-size: 18px;
+   color: #544c51;
+   width: 100%;
+   padding: 0.5em;
+}
+
+input[type=submit] {
+   background-color: #c3c1c9;
+   padding: 5px 15px;
+}
+
+
+label {
+   line-height: 50px;
+   margin: 20px;
+   font-size: 20px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   letter-spacing: 1px;
+   color: #6a6a75;
+}
+
+
+input,
+textarea {
+   border-radius: 10px;
+   border-color: #c3c1c9;
+   border-style: solid;
+   height: 40px;
+   background-color: #e4e1eb;
+}
+
+#text-form {
+   padding-left: 35%;
+   margin-bottom: 15%;
+   margin-top: 5%;
+   color: #6a6a75;
+}
+
+td {
+   padding: 0 15px;
+}
+
+.agreement {
+   font-size: 15px;
+   margin-top: 4%;
+}
+
+input[type="checkbox"] {
+   margin-left: 30px;
+   margin-right: -30px;
+}
+       
+    </style>
+</head>
+
+<body style="background-color: #d9ffc7;">
+    <div class="topnav" id="myTopnav">
+        <a href="Homepage_portfolio_Concordia.html" class="nav">homepage</a>
+        <a href="Blog_portfolio_Concordia.html" class="nav">Art & Design in CS</a>
+        <a href="Form_portfolio_Concordia.html" class="nav">Contact</a>
+    </div>
+
+    <div id="image">
+        <figure>
+            <img src="https://lh3.googleusercontent.com/proxy/COXVvtO2NYdLWeXvMZqgg1IfGc02Jwg7I2_5Di9QuJbbQKOERxReluSWLTaSG87vM09szc4D-INpUO8F4Elfy2b_pxjUiywXdPCpdZhcTOPp-Up6gtN7i0nYsvRMWd3or0mBX4akWU9OpkAE3A"
+                alt="Art_and_CS" width="400" height="500" class="image1">
+            <div id="caption-image">
+                <p class="figcaption">Designers, programmers and artists work together</p>
+                <p class="figcaption" style="margin-top: -1em;"> to find a common ground in the goal of developping a project.</p>
+            </div>
+        </figure>
+    </div>
+
+    <div id="header">
+        <header>Art and Design</header>
+        <header>Meets Computer Science</header>
+    </div>
+
+    <div id="history" class="content">
+
+        <span>History</span>
+        <br><br><br>
+
+        <p><b>1973</b>: The Univeristy of Illinois founded a graduate laboratory to increase the study
+            and research of virtual reality as well as real-time interactive computer graphics.
+        </p>
+
+        <p><b>1993</b>: The movie Jurassic Park became the first movie to sucessfully showcase 3D images at
+            film resolution. Computer-generated (CGI) had made many improvments since then.
+        </p>
+        <p>
+            <b>1994</b>: The Mosaic Browser was the first graphic user-friendly interface web browser
+            developped and distrubuted to the general public.
+        </p>
+        <p><b>1995</b>: "Vision of the Future" was a project developped in aim to design electronical products
+            by incomporating quality-of-life considerations into the design process.
+        </p>
+        <p><b>1995-2000</b>: Developppment in examining and improving the intersection of
+            computer science, humanities and the arts by the Computer Science and Telecommunications
+            Board (CSTB).
+        </p>
+
+    </div>
+
+    <div id="definitions" class="content">
+
+        <span>Definitions</span>
+
+        <ul>
+            <li> Computer science: According to<a href="https://www.britannica.com/science/computer-science"
+                    target="_blank">britannica</a>
+                the study of computers and computing,
+                includes the study of algorithms and data structures, computer and network design,
+                modeling data and information processes, and artificial intelligence.
+            </li>
+            <br>
+            <li>
+                Visual arts: While visual arts is a medium to express emotions, objetcs, events through the
+                creations of ceramics, drawing, painting and sculpture; it also commonly used in applied arts such as
+                industrial design, graphic design, fashion design and interior design.
+            </li>
+            <br>
+            <li>
+                Digital media: According to the journalist, Dalia Goldberg, Digital media is binary data transformed to
+                broadcast and spread information.
+                Digital media can be translated to audio, video, graphics etc in aim to offer a user-friendly
+                experience.
+            </li>
+            <br>
+            <li>
+                Computer Graphics: A process which transforms information into visual form. The aim is to represent
+                imagery and 3D modeling by using specific software and considering realistic details such as
+                lighting, reflection and texture.
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div id="pros-cons" class="content">
+
+        <span>Disadvantages</span>
+        <ul>
+            <li>
+                Digital Artists are more likley to get employed than traditional illustrators and cartoonists.
+            </li>
+            <li style="margin-top: 1em;">
+                AI raises an ethical and a social concern since its use may create bais, discriminate an minority
+                and even spread false information.
+            </li>
+        </ul>
+        <span style="margin-top: 6em;">Advantages</span>
+        <ul style="margin-top: 9.5em">
+            <li>
+                AI encourages cross-interdisplinary projects and research. Engineers and artists work together to build
+                and envision new realities.
+            </li>
+            <li style="margin-top: 1em;">
+                Optimizes a user-friendly experience of devices and softwares for the general public.
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="AI" class="content">
+        <span>Creativity with AI</span>
+        <div id="AI-text" style="padding-top: 5%;">
+            <p>The expression "expressive AI" makes use of an combination of art Studio practices
+                and AI to build new projects or develop new research purposes. It is commonly used in artificial
+                intelligence, in the arts and in cultural fields in order to allow the audience to interact with the artists creation. </p>
+            <p> AI is conssidered to be a useful tool to improve sensors and actuators. For example,
+                when light sensitive sensors are attached to a human body, these specks of lights are captured by several
+                cameras.
+                The final result is stored data representing the movments of the human body. A system will then analyse
+                and
+                intrepret the information to create an virtual preformance.
+            </p>
+            <p> Another facinating project developped with the help of AI is the "Terminal Time",
+                a system which builds historical documentary based upon the audience response to a list of question.
+                During the show, the audience are asked a few generated questions. The show will continue its story
+                according
+                to answers given by the majority. </p>
+        </div>
+
+    </div>
+
+    <div id="reference">
+        <span style="font-size: 15px; margin-top: 5%; padding:20px; text-align: left;"> Reference: Mitchell, W., Inouye, A. ; Blumenthal, M. (2003). Beyond Productivity: Information Technology, Innovation and Creativity. Washington, DC: The National Academic Press. </span>
+    </div>
+
+    <div id="footer">
+        <a href="Homepage_portfolio_Concordia.html" class="nav">homepage</a>
+        <a href="Blog_portfolio_Concordia.html" class="nav">Art & Design in CS</a>
+        <a href="Form_portfolio_Concordia.html" class="nav">Contact</a>
+    </div>
+
+
+</body>
+
+</html>
