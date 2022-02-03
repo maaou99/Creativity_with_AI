@@ -1,0 +1,118 @@
+<!--
+    Author: Mariam Aoune 
+    Date of completion: 3rd of January 2021 
+    Name of file: Blog_portfolio_Concordia.html
+    Description: Page 2 of the form. Asks users two question in regards to 
+    the subject
+    
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script defer src="text_CWAI.js"></script>
+    <title>Page 2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+ 
+<body >
+    <form  autocomplete = on class="transition-fade" novalidate>
+    
+
+            <div id="first-page"  >
+         
+                <div id="header-first-form" style="padding-top: 6%;">
+                    <h2>Your view on computational arts?</h2>
+                </div>
+        <br><br>
+                <div id="Name" class="position-first-page" >
+                
+                    <label for="your-name" class = "text-second-page">Describe Computational Arts in three words.
+                  
+                    <table id="first-last">
+                        <tr>
+                            <td>
+                                <input  id = "three-words" style="position: relative; top: 10px;" class = "hvr-grow input-border"type="text" name="fname"   placeholder="First Second Third" pattern="[a-zA-Z]*" required>
+                                <p id = "three-words-input" class="text-age-input" style="padding-top: 10%;" ></p>
+                            </td>
+                        </tr>
+        
+                    </table>
+                </div>
+               <br><br>
+                <div id="gender" class="position-first-page" style=" position:relative; top: 40px;">
+                    
+                    <br> 
+        
+                    <table>
+                        <tr>
+                            <td>
+                                <label class = "text-second-page" for= "your-gender">Would you consider studing computational Arts?</label>
+                                <p id="asterisk" style="left: 390px;"  >*</p></label>
+                                <br>
+                                <input type="radio" id="yes-no" name="fav_language" value="Yes!"> 
+                                <label for="html">Yes!</label>
+                                <br>
+                                <input type="radio" style=" position: relative; top: 10px;" id="yes-no-second" name="fav_language" value="Hmm, no. ">
+                                <label for="html" style=" position: relative; top: 10px;" >Hmm, no.</label>
+                                <p id = "choice-input" class="text-age-input" style="padding-top: 5%;" ></p>
+                            </td>
+                           
+                           
+                        </tr>
+                    </table>
+                  
+                </div>
+                
+        
+                <br><br>
+                    <div id="button-first-page">
+                       
+                        <button type="button" class = "submit-form"  style="bottom: 10%;" type = "submit" name="age-num" value=""> </button>
+                    </div>
+            <br>
+                    <div class= "arrow" style="  margin-left: -1%;" >
+                        <a href="pg3_form.html" onclick="pg2(); return false;"   id = "button1" class= "increase-click-area" ></a>
+                         
+                       </div>
+                
+                
+   
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 816 171">
+                    <g class="cls-1"><circle class="cls-2" cx="360.5" cy="30.5" r="10.5"/></g>
+                    <g class="cls-1"><circle class="cls-2" cx="410.12" cy="30.5" r="15.5"/></g>
+                    <g class="cls-1"><circle class="cls-2" cx="460.5" cy="30.5" r="10.5"/></g>
+                </svg>
+
+                
+        
+            </div>
+        
+                 
+            <div id="go-to-homepage">
+        
+                <div id= "button-shape">
+                    <input  type="button" onclick="location.href='homepage_Creativity_AI.html';" class = "submit-form to-homepage" style="position: relative; margin-top: 13%; left: 270px;" value = "Homepage" > </input>
+                </div>
+               
+            </div>
+    
+    
+    
+      
+    
+     
+
+
+    </form>
+ 
+
+    
+</body>
+</html>

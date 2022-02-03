@@ -1,0 +1,138 @@
+<!--
+    Author: Mariam Aoune 
+    Date of completion: th of Feb 2021 
+    Name of file: Blog_portfolio_Concordia.html
+    Description: Page 1 of the form. Asks for users full name, age and gender. 
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <script defer src="text_CWAI.js"></script>
+ 
+    <title>Page 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  
+     
+
+</head>
+
+ 
+<body  >
+   
+    <form  autocomplete = on class="transition-fade" novalidate>
+        <div id="first-page">
+         
+            <div id="header-first-form" style="padding-top: 6%;">
+                <h2>Let us to get to know more about you!</h2>
+            </div>
+    
+            <br>
+    
+            <div id="Name" class="position-first-page"  >
+    
+                <label id="label" for="your-name">Name<p id="asterisk" style="left: 20px;">*</p></label>
+              <br>
+                <table id="first-last">
+    
+                    <tr>
+                        <td><input  class = "hvr-grow input-border" type="text" name="fname" id="your-fname" placeholder="First"  >
+                             <p id="txt-fname-input" class ="text-age-input" ></p>
+                        </td>
+                       
+                        <td style="padding-left: 30px;"><input class = "hvr-grow input-border" type="text" name="lname" id="your-lname" placeholder="Last"   >
+                            <p id="txt-lname-input"  class ="text-age-input" > </p>
+                        </td>
+                        
+                    </tr>
+                    
+    
+                </table>
+            </div>
+    
+            <div id="gender-age" class="position-first-page" >
+                
+        
+    
+                <table>
+                    <tr>
+                        <td>
+                            <label id="label" for= "your-gender">Gender</label>
+                            <p id="asterisk" style="left: 35px;"  >*</p></label>
+                          <br>
+                            <select name="gender" id="gender-select" class = "hvr-grow " >
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="Female">Female</option>
+                                <option value="Male">Male</option>
+                                <option value="Other">Prefer not to specify</option>
+                              </select>
+                              <p id = "txt-gender-input" class="text-age-input" ></p>
+                        </td>
+                       
+                        <td style="padding-left: 35px;">
+                            <label id="label" for= "your-age">Age</label>
+                          <br>
+                          <br>
+                            <p id="asterisk" style="bottom:20px;"> *</p></label>
+                            <input id = "age-input" style =" margin-bottom: 0%; "type="number" name="age-num" class = "hvr-grow" required />
+                            <br>
+                         <p id = "txt-age-input" class="text-age-input" ></p>
+
+                            
+
+    
+                        </td>
+                    </tr>
+                </table>
+               
+            </div>
+    
+            <br><br>
+            <div id="button-first-page">
+                <input type="button"   class = "submit-form"  name="age-num" value=""> </input>
+            </div>
+    <br><br>
+            <div class= "arrow" style="margin-top:0.5%" >
+             <a href="index.html.html" onclick="pg1(); return false;"   id = "button1" class= "increase-click-area" ></a>
+              
+            </div>
+
+            <div id="go-to-homepage">
+            
+                <div id= "button-shape">
+                    <input  type="button" onclick="location.href='homepage_Creativity_AI.html';" class = "submit-form to-homepage" value="Homepage" style="bottom:10%; " ></input>
+                </div>
+            </div>
+    
+            <svg id="Layer_1" style= "margin-top: -10%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 816 171">
+                <g class="cls-1"><circle class="cls-2" cx="380.5" cy="20.5" r="15.5"/></g>
+                <g class="cls-1"><circle class="cls-2" cx="430.12" cy="20.5" r="10.5"/></g>
+                <g class="cls-1"><circle class="cls-2" cx="480.5" cy="20.5" r="10.5"/></g>
+            </svg>
+        </div>
+
+    
+            
+     <img src="Asset 2-8.png" alt="Art_CS" class="waving-girl-image">
+            
+    
+  
+
+      
+ 
+
+
+    </form>
+
+           
+   
+    
+</body>
+</html>
